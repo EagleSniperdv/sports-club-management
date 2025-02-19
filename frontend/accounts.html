@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounts Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .nav {
+            background: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .nav a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .section h2 {
+            color: #007BFF;
+        }
+        .settings {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background: #007BFF;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 250px;
+            justify-content: center;
+        }
+        .card:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a>
+        <a href="membership.html"><i class="fas fa-users"></i> Membership</a>
+        <a href="tournament.html"><i class="fas fa-trophy"></i> Tournaments</a>
+        <a href="booking.html"><i class="fas fa-calendar-check"></i> Book a Resource</a>
+        <button id="logout"><i class="fas fa-sign-out-alt"></i> Logout</button
+    </div>
+
+    <div class="container">
+        <h1>Accounts Management</h1>
+        <div class="section">
+            <h2>Manage Finances</h2>
+            <div class="settings">
+                <div class="card"><i class="fas fa-dollar-sign"></i> Track Income</div>
+                <div class="card"><i class="fas fa-file-invoice-dollar"></i> Log Expenditures</div>
+                <div class="card"><i class="fas fa-chart-line"></i> Financial Reports</div>
+                <div class="card"><i class="fas fa-cogs"></i> Configure Fee Structures</div>
+                <div class="card"><i class="fas fa-receipt"></i> Automate Invoicing</div>
+                <div class="card"><i class="fas fa-file-alt"></i> Section-Specific Summaries</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

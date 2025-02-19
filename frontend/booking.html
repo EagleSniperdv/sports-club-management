@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Resource</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Book a Resource</h1>
+    
+    <div class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="tournament.html">Tournaments</a>
+        <button id="logout">Logout</button>
+    </div>
+
+    <div class="container">
+        <h2>Select a Resource</h2>
+        <select id="resource">
+            <option value="court">Tennis Court</option>
+            <option value="gym">Gym Equipment</option>
+            <option value="pool">Swimming Pool</option>
+        </select>
+        <input type="date" id="booking-date" required>
+        <button id="book-resource">Book Now</button>
+        <p id="booking-status"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
